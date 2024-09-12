@@ -6,6 +6,7 @@ using Plots, StatsPlots, Measures
 
 include("datasets.jl")
 
+using ProgressMeter, Optim, Suppressor
 
 function getprojectdir()
     d = pwd()
